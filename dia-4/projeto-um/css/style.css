@@ -1,0 +1,34 @@
+table, th, td{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/*
+.verif{
+
+    background-color: yellow;
+
+}*/
+
+table{
+    width: 60%;
+    margin: auto;
+}
+
+td, th{
+
+    padding: 5px;
+}
+
+thead{
+    background-color: royalblue;
+    color: white;
+}
+
+tfoot{
+    text-align: center;
+}
+
+tbody tr:nth-child(2n){
+    background-color: darkgray;
+}
