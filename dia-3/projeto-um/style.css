@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap');
+/* https://fonts.google.com/ --> Import*/ 
+/* Colar font-family após colocar url */
+
+h1{
+    text-align: center;
+    text-decoration: overline green;
+    text-shadow: 2px 2px 0px orange;
+    background-color: red;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    background-color: yellow;
+}
+
+.paragr1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    font-style:italic;
+    text-align: justify;
+    /* ctrl + ; para comentar a linha toda */
+    /* text-decoration: line-through; */
+    text-shadow: -2px -2px 0px gray;
+
+    /* altura entre as linhas */
+    line-height: 50px;
+    /* espaçamento entre as letras */
+    letter-spacing: 2px;
+    /* espaçamento entre as palavras */
+    word-spacing: 15px;
+    /* parágrafo */
+    text-indent: 40px;
+
+    
+}
+
+.paragr2{
+    font-family: 'Courier New', Courier, monospace;
+    /* proporção de tamanho relativo ao "pai" que é a div */
+    font-size:1.2em;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: underline dotted red;
+    
+    
+}
+
+.paragr3{
+    font-family: "Rubik Scribble", system-ui;
+    text-transform: uppercase;
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+    
+}
+
+.paragr4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-variant: small-caps;
+    text-align: end;
+}
+
+
+
+div{
+    background-color:aquamarine;
+    font-size: 25px;
+}
+
