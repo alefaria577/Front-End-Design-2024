@@ -1,0 +1,95 @@
+/* Para todos os elementos */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 30px auto;
+    height: 450px;
+    background-color: lightblue;
+    border: 4px solid royalblue;
+    display: flex;
+    /* valor padrão do display = row */
+    /* valor padrão sem o display flex = column */
+    flex-direction: row; 
+    /* Outras opções flex direction: row-reverse, column-reverse*/
+    flex-wrap: nowrap;
+    /* nowrap - wrap - wrap-reverse */
+    justify-content: flex-start;
+    /* flex-start - é o padrão, elementos alinhados da esquerda para a direita */
+    /* flex-end - alinha da direita para esquerda */
+    /* center -  alinha a partir do centro */
+    /* space-between - espaço entre os elementos */
+    /*  space-around - espaço em volta do elemento */
+    /* space-evenly - Distribui igualmente os espaços */
+    align-items: stretch;
+    /* stretch - em baixo */
+    /* flex start */
+    /* center - centro */
+    /* baseline - usa o eixo do texto para alinhar */
+    align-content: stretch;
+    /* stretch - é o padrão */
+    /* flex start - faz a linha ficar uma abaixo da outra */
+    /* flex end - igual o start porém joga tudo pra baixo  */
+    /* center - tras tudo pro centro */
+    /* space-between - espaço entre as linhas */
+    /* space-around - espaço sobre uma parte, incluindo bordas*/
+    /* space-evenly - espaçamentos todos iguais */
+
+
+
+
+}
+
+.container>div{
+    width: 150px;
+
+    border: 2px solid coral;
+    background-color: lightsalmon;
+}
+
+
+.item3{
+    /* order: -1; */
+    /* flex-grow: 1 ; */
+    /* flex-grow - pega apenas o espaço que está sobrando */
+    /* 0 - padrao */
+
+    /* flex-shrink - altera o espaço que está sendo "espremido" */
+    /* quanto maior o valor mais "espreme" em comparação com os outros */
+    /* flex-shrink: 3; */
+
+    /* largura base */
+    /* flex-basis: 200px; */
+    flex: 0 1 200px;
+    /* ordem: grow,shrink e basis  */
+    align-self: end;
+
+}
+
+.item1{
+   
+    /* flex-grow: 1 ; */
+
+    flex-basis: 200px;
+
+    align-self: flex-start;
+}
+.item2{
+   
+    /* flex-grow: 2 ; */
+
+    flex-basis: 200px;
+
+    align-self: center;
+}
+.item4{
+    
+    /* flex-grow: 1 ; */
+
+    flex-basis: 200px;
+}

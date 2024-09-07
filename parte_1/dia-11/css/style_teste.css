@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+div{
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+p{
+    /*font-size: 1.5em;  relativo ao elemento pai*/
+    /*font-size: 1.5rem;  relativo ao elemento raiz */
+    /*font-size: 100%;  relativo ao elemento raiz */
+    font-size: 1.5vw; /* relativo a janela do navegador "largura" */
+    /* obs: se aumenta a largura aumenta a fonte e vice versa */
+    
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.box img{
+    /* responsividade para imagens, sem precisar mudar o tamanho */
+    max-width: 90%;
+}

@@ -1,0 +1,60 @@
+/* variaveis */
+
+:root{
+    --font-color1:#000;
+    --font-color2:#fff;
+    --font-color3:#00ffff;
+    --bg-color1:#110656;
+    --bg-color2:#f0aaf0;
+}
+
+/*reset basico*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+     display:flex;
+     flex-direction: column;
+     width: 100%;
+     height: 100vh;
+     background: var(--bg-color2);
+}
+
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--font-color1);
+    width: 100%;
+    height: 60px;
+    font-size: 1rem;
+    background-color: var(--font-color3);
+    color:var(--bg-color1)
+}
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:10px 10px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border: 2px solid var(--font-color3);
+    background: var(--bg-color1);
+    color: var(--bg-color2);
+}
+#image{
+    width: 100%;
+    height: 150px;
+}

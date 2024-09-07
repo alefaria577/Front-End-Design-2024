@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: royalblue;
+    color: white;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    background-color: darkblue;
+    min-height: 40px;    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   display: block;
+   padding: 10px 15px; 
+}
+
+nav ul li a:hover{
+    background-color: royalblue;
+}
+
+.corpo{
+    flex-grow: 1;
+    display: flex;
+    
+}
+
+main{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas: 
+    'sec1     sec2     sec2     sec3'
+    'article  article  article  article'
+    ;
+}
+
+.sec1{grid-area: sec1;}
+.sec2{grid-area: sec2;}
+.sec3{grid-area: sec3;}
+article{grid-area: article;}
+
+
+.sec1, .sec2, .sec3, article{
+    background-color: gray;
+    border: 2px solid #333;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cont{
+    flex-grow: 1;
+}
+
+
+
+
+aside{
+    width: 250px;
+    padding: 10px;
+}
+
+
+footer{
+    background-color: #222;
+    min-height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

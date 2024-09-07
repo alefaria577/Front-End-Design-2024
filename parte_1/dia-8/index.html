@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+
+    <H1>Formulários</H1>
+    <!-- Action é para onde os dados vão ser recriados -->
+    <!-- Método get 'pega' os dados -->
+    <!-- Método Post guarda os dados dentro da mensagem, usa para enviar no backend -->
+
+    <form action="cadastro" method="get"> 
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <!-- <label for="idNome">Nome</label> -->
+            <input type="text" name="nome" id="idNome" placeholder="Nome" required><br>
+    
+            <label for="idEmail">E-mail</label>
+            <input type="email" name="email" id="idEmail"><br>
+
+            <label for="idSenha">Senha:</label>
+            <input type="password" name="senha" id="idSenha" maxlength="6"><br>
+
+            <label for="idData">Data</label>
+            <input type="date" name="data" id="idData"><br>
+
+            <label for="idValor">Valor</label>
+            <input type="number" name="value" id="idValor" step="0.01" min="0" max="50"><br>
+            
+            <label for="idEstado">Estado</label>
+            <select name="uf" id="idEstado">
+                <option value="" selected disabled>Selecione um estado</option>
+
+                <optgroup label="Sudeste">
+
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                
+                <optgroup label="Sul">
+
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Caratina</option>
+
+                </optgroup>
+
+
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tamanho</legend>
+
+            <input type="radio" name="tamanho" id="idPeq" value="P">
+            <label for="idPeq">Pequeno</label>
+
+            <input type="radio" name="tamanho" id="idMed" value="M">
+            <label for="idMed">Médio</label>
+
+            <input type="radio" name="tamanho" id="idGrd" value="G">
+            <label for="idGrd">Grande</label>
+            <!-- Shift + alt + seta pra baixo : ctrl c + ctrl v -->
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Cores</legend>
+
+            <input type="checkbox" name="cores" id="idAzul" value="Azul">
+            <label for="idAzul">Azul</label>
+
+            <input type="checkbox" name="cores" id="idVerde" value="Verde">
+            <label for="idVerde">Verde</label>
+
+            <input type="checkbox" name="cores" id="idVermelho" value="Vermelho">
+            <label for="idVermelho">Vermelho</label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Observações:</legend>
+            <textarea name="obs" id="idObs" cols="50" rows="10"></textarea>
+
+        </fieldset>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+</body>
+</html>
