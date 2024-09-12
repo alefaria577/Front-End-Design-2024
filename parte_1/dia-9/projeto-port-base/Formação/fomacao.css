@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: #f0f0f0;
+}
+
+
+
+
+.header{
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+#topo{
+    color: black;
+    border: 2px solid black;
+    padding: 8px;
+    background-color: #F0F8FF;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+#topo:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+
+.nome{
+    background-color: #FDF5E6;
+    padding: 10px;
+    max-width: 100%; /* Ajusta a largura máxima para ser 100% da tela */
+    width: 500px; /* Define a largura desejada */
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: overline blueviolet;
+    text-shadow: 2px 2px 0 #C0C0C0;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Faz com que as listas ocupem toda a largura disponível */
+    max-width: 600px; /* Define a largura máxima das listas */
+}
+
+li {
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
+}
+

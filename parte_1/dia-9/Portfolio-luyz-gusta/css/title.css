@@ -1,0 +1,23 @@
+.section-title {
+    grid-area: title;
+    background-color: blue;
+    font-size: clamp(2rem, 18vw, 14rem);
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(#9b9a9a, #000);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media(max-width: 960px) {
+    .section-title{
+       font-size: 10.4rem; 
+       padding-bottom: 20px;
+    }
+
+    .section-title{
+        font-size: 7rem;
+        font-weight: 400;
+    }
+}

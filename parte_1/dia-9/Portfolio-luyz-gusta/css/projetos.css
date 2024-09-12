@@ -1,0 +1,81 @@
+.projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    gap: 48px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "Clique aqui para ver o projeto";
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+
+.card:hover::before {
+    transform: translateY(0%);
+    background-color: royalblue;
+}
+
+@media(max-width: 960px) {
+    .projetos {
+        height: 200rem;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 670px;
+        height: auto;
+    }
+    .card:hover::before {
+        display: none;
+    }
+    .card::before {
+        display: none;
+    }
+}
+
+@media(max-width:640px) {
+    .projetos {
+        height: 165rem;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        display: flex;
+        width: 558px;
+    }
+}

@@ -1,0 +1,108 @@
+.sobre-mim {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "title title" "description skills";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+.description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.description-title {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.description-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.skills {
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.skills-title {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.icon {
+    width: 9.4rem;
+    height: 9.4rem;
+    background-color: var(--icon-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon i {
+    font-size: 4rem;
+}
+
+.icon span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/*Tablet*/
+
+@media(max-width: 960px) {
+    .sobre-mim {
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70rem;
+    }
+    .skills-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 90px;
+    }
+}
+
+@media(max-width: 640px) {
+    .sobre-mim {
+        max-width: 558px;
+        width: 100%;
+        height: 90rem;
+    }
+    .description-title {
+        font-size: 2.5rem;
+    }
+    .description-text {
+        font-size: 1.25rem;
+    }
+    .skills-icons {
+        max-width: 450px;
+    }
+    .icon {
+        width: 130px;
+        height: 130px;
+    }
+    .skills-icons {
+        gap: 85px;
+    }
+}

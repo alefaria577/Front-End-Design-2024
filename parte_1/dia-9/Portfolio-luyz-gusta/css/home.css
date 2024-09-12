@@ -1,0 +1,26 @@
+.home {
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    box-shadow: inset 0px -40px 40px black;
+}
+
+.home-text {
+    font-size: 2.25rem;
+}
+
+.home-name {
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.home-photo {
+    width: 250px;
+    border-radius: 100%;
+}
